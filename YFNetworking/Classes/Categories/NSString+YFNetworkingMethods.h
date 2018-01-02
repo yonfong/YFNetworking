@@ -9,4 +9,6 @@
 
 @interface NSString (YFNetworkingMethods)
 
+- (NSString *)yf_md5;
+
 @end

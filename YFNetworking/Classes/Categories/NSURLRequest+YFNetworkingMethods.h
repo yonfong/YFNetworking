@@ -9,4 +9,6 @@
 
 @interface NSURLRequest (YFNetworkingMethods)
 
+@property (nonatomic, copy) NSDictionary *requestParams;
+
 @end

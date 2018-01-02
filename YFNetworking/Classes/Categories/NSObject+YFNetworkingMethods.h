@@ -9,4 +9,7 @@
 
 @interface NSObject (YFNetworkingMethods)
 
+- (id)yf_defaultValue:(id)defaultData;
+- (BOOL)yf_isEmptyObject;
+
 @end

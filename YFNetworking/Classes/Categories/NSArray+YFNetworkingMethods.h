@@ -9,4 +9,7 @@
 
 @interface NSArray (YFNetworkingMethods)
 
+- (NSString *)yf_paramsString;
+- (NSString *)yf_jsonString;
+
 @end

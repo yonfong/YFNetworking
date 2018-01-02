@@ -9,4 +9,9 @@
 
 @interface UIDevice (YFNetworkingMethods)
 
+- (NSString *) yf_macaddress;
+- (NSString *) yf_macaddressMD5;
+- (NSString *) yf_machineType;
+- (NSString *) yf_ostype;//显示“ios6，ios5”，只显示大版本号
+
 @end

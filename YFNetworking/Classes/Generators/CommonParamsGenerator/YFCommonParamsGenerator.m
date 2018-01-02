@@ -6,7 +6,20 @@
 //
 
 #import "YFCommonParamsGenerator.h"
+#import "NSDictionary+YFNetworkingMethods.h"
 
 @implementation YFCommonParamsGenerator
+
++ (NSDictionary *)commonParamsDictionary
+{
+    return @{
+             };
+}
+
++ (NSDictionary *)commonParamsDictionaryForLog
+{
+    return @{
+             };
+}
 
 @end

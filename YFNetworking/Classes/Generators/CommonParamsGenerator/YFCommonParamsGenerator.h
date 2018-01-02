@@ -9,4 +9,7 @@
 
 @interface YFCommonParamsGenerator : NSObject
 
++ (NSDictionary *)commonParamsDictionary;
++ (NSDictionary *)commonParamsDictionaryForLog;
+
 @end

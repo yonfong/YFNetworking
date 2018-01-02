@@ -9,4 +9,6 @@
 
 @interface NSMutableString (YFNetworkingMethods)
 
+- (void)yf_appendURLRequest:(NSURLRequest *)request;
+
 @end

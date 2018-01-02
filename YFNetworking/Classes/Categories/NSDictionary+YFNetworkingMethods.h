@@ -9,4 +9,8 @@
 
 @interface NSDictionary (YFNetworkingMethods)
 
+- (NSString *)yf_urlParamsStringSignature:(BOOL)isForSignature;
+- (NSString *)yf_jsonString;
+- (NSArray *)yf_transformedUrlParamsArraySignature:(BOOL)isForSignature;
+
 @end

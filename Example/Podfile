@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'YFNetworking_Example' do
+  pod 'YFNetworking', :path => '../'
+
+  target 'YFNetworking_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end

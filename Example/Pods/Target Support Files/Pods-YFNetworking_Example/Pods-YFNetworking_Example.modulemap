@@ -1,0 +1,6 @@
+framework module Pods_YFNetworking_Example {
+  umbrella header "Pods-YFNetworking_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

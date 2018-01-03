@@ -45,6 +45,16 @@
 		30F0BAE1DBB79BBB6CBD957EA8B89E4B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB21B32FE01C25D0203A1D0382BE08CE /* MobileCoreServices.framework */; };
 		31328536635BDC034D4E43B11CA846BD /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9298EA82534900524B3D35B6B8C2AD12 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A362217F33D8CE4716AFDC9DAEE55A5 /* UIButton+AFNetworking.m */; };
+		33AD889E1FFD27C8002395B9 /* YFCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD889D1FFD27C8002395B9 /* YFCacheObject.m */; };
+		33AD889F1FFD27C8002395B9 /* YFCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD889D1FFD27C8002395B9 /* YFCacheObject.m */; };
+		33AD88A01FFD27C8002395B9 /* YFCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD889D1FFD27C8002395B9 /* YFCacheObject.m */; };
+		33AD88A11FFD27C8002395B9 /* YFCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD889D1FFD27C8002395B9 /* YFCacheObject.m */; };
+		33AD88A21FFD27C8002395B9 /* YFCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD889D1FFD27C8002395B9 /* YFCacheObject.m */; };
+		33AD88A41FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AD88A31FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h */; };
+		33AD88A51FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AD88A31FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h */; };
+		33AD88A61FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AD88A31FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h */; };
+		33AD88A71FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AD88A31FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h */; };
+		33AD88A81FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AD88A31FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h */; };
 		34827298EF341B6EB8D622F2A071B6D3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937A875AE37A9966B3499D42BA368FBB /* AFNetworking.framework */; };
 		34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 675BC992DA6154153DCB2685D8BDA862 /* UIProgressView+AFNetworking.m */; };
 		35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E70D25FBB07C2F33CA6A9E915B2F7995 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -107,7 +117,6 @@
 		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD9BEBCDC3AC040B50A8F8DA18E5E8 /* UIWebView+AFNetworking.m */; };
 		7E81176499F06E523CE3039B08AB5051 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 907F002D06121E7F3371BB57C7C8876A /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F1209D2DD89FBCDABDA3CDBB0DDB49D /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C24CF0BACC89744DCDE0E73FB33842F /* XCTestCase+Specta.m */; };
-		7F775CE33ABB13271204A57DA2BAD74B /* YFNetworkingConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E7239B84EBB3F8FDBDC9DD51BD740009 /* YFNetworkingConfigurationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81B079C7046BE07894B192B26A625EE7 /* YFService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203D9EDC49F6BAE6918780C915491BB /* YFService.m */; };
 		8220368E5F7EA70947BAD2B6F216C61B /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F18DBB69FC0EE850FFEA1F420438C /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		827762B596901D18DAD29830875E1922 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = B0542003C8E637CBBEECC1ECD175FCDD /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -121,7 +130,7 @@
 		87AE70A44BD8E8676B2A3EDB6E334138 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3BFE424EEF6ECC9733A1CCBFF60BF4 /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87C61FE4EBA517506085582BD4175CCA /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = A27AA887B33A8FF755879411D85012F9 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88985969D53C39C51BEA62A89715A05E /* NSURLRequest+YFNetworkingMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 8628A440EBAB7959DB9946280E07855D /* NSURLRequest+YFNetworkingMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		889D422C3D19E210BF4DC9F5FC351424 /* YFCacheObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7747ED1B90A7D7FFFAD776542D5D3AA3 /* YFCacheObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		889D422C3D19E210BF4DC9F5FC351424 /* YFCachedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7747ED1B90A7D7FFFAD776542D5D3AA3 /* YFCachedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		889FE136349E95DFBE20F050685FB124 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1524EC91DBB4D2786840E8CAA35DC9 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B0A34DADDB56E70CF4A5177E65AA081 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 371D8C6F846AA249CD6173CAD621A7A4 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B8C4B3E28E6FC6D26037EFC282BE4C5 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2E404DD1CA8AB9AAB4C70AA8DC72B6 /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -195,7 +204,6 @@
 		CE7E4C141657D23213C7FAE616D7FA75 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9C82AD6638334CA9107F7CDE5B5AC /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 074283BBD8CA8CBE149680597ED6FC20 /* AFSecurityPolicy.m */; };
 		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 661643079BC915D72D992A3AD57A4DE1 /* AFNetworking-dummy.m */; };
-		D09E8B74530C92A75E8CD415F69E9123 /* YFCacheObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC094A43C808495FB94487058DE7A /* YFCacheObject.m */; };
 		D1768C977F0CD5B420D1A1D2375CDBD4 /* Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61392E2722BE641D6C3670076936FF58 /* Expecta-dummy.m */; };
 		D180489445C2C507332A6EE964ADA1E5 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0915394FBA5F9E1FBCDD4D6F3A182042 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D1B01CDE0AF6F7D5ABEA33B6925B7AC2 /* YFURLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 99AD26E084F252ED45CE8704472E3086 /* YFURLResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -372,6 +380,8 @@
 		3050F7BB7C919F9435D6E7C2DF9A1C33 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
 		3203D9EDC49F6BAE6918780C915491BB /* YFService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YFService.m; sourceTree = "<group>"; };
 		3344EA80A6056AF4C60744C4C8990ECB /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		33AD889D1FFD27C8002395B9 /* YFCacheObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCacheObject.m; sourceTree = "<group>"; };
+		33AD88A31FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNetworkingConfigurationManager.h; sourceTree = "<group>"; };
 		33D0D5FD97E68FC0B701C98D3681DD19 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		371D8C6F846AA249CD6173CAD621A7A4 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
 		37AED505568D735B03D487AF4AC4601C /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
@@ -453,7 +463,7 @@
 		74D81A56313A044EB3BEEE40B1728045 /* Pods_YFNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YFNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D6DD9457B7CCE878BF70AD668FB52B /* UIDevice+YFNetworkingMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YFNetworkingMethods.m"; sourceTree = "<group>"; };
 		771A9FA6F79A8BF76633048C6A85D15C /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
-		7747ED1B90A7D7FFFAD776542D5D3AA3 /* YFCacheObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YFCacheObject.h; sourceTree = "<group>"; };
+		7747ED1B90A7D7FFFAD776542D5D3AA3 /* YFCachedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YFCachedObject.h; sourceTree = "<group>"; };
 		784AFBD5918CFFFBCA21B195D1B3A4DE /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
 		7A4440A25C11567534CE64C0DC095875 /* YFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YFNetworking.xcconfig; sourceTree = "<group>"; };
 		7BE7381A5220D24A7C1605D9532EAFDF /* YFCommonParamsGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YFCommonParamsGenerator.h; sourceTree = "<group>"; };
@@ -501,7 +511,6 @@
 		9D3F2725E080E442B66EC72D27CCD7BB /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		A09E0DC9DDD123EC68F3256CEA3FF409 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		A0E7E0B09D3DC22D422D376F35075627 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
-		A0FEC094A43C808495FB94487058DE7A /* YFCacheObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YFCacheObject.m; sourceTree = "<group>"; };
 		A1B25B221941C9C8C210910550F3CAEE /* YFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YFNetworking-umbrella.h"; sourceTree = "<group>"; };
 		A25B21F8334D32D95C7D48F9B9FF3542 /* YFLocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YFLocationManager.m; sourceTree = "<group>"; };
 		A27AA887B33A8FF755879411D85012F9 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
@@ -559,7 +568,6 @@
 		E6B9EAEFFCD79806B02477D549940B6B /* YFLoggerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YFLoggerConfiguration.h; sourceTree = "<group>"; };
 		E70D25FBB07C2F33CA6A9E915B2F7995 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		E71BB670A30230D3577F186712750443 /* YFRequestGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YFRequestGenerator.m; sourceTree = "<group>"; };
-		E7239B84EBB3F8FDBDC9DD51BD740009 /* YFNetworkingConfigurationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YFNetworkingConfigurationManager.h; sourceTree = "<group>"; };
 		E8BD9BEBCDC3AC040B50A8F8DA18E5E8 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E97F4D683C1A5D39702E7DFB11EC27BB /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		E9F17A9905F41368ED44A89222E8B9C5 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
@@ -1241,8 +1249,8 @@
 			children = (
 				F154BA104875AB693E15D1FCDE864278 /* YFCache.h */,
 				7E11BA796AE55497020F43B7F197134F /* YFCache.m */,
-				7747ED1B90A7D7FFFAD776542D5D3AA3 /* YFCacheObject.h */,
-				A0FEC094A43C808495FB94487058DE7A /* YFCacheObject.m */,
+				7747ED1B90A7D7FFFAD776542D5D3AA3 /* YFCachedObject.h */,
+				33AD889D1FFD27C8002395B9 /* YFCacheObject.m */,
 			);
 			path = CacheComponents;
 			sourceTree = "<group>";
@@ -1252,7 +1260,7 @@
 			children = (
 				E6B9EAEFFCD79806B02477D549940B6B /* YFLoggerConfiguration.h */,
 				D10771B2345287AFD817D2C29288EC6D /* YFLoggerConfiguration.m */,
-				E7239B84EBB3F8FDBDC9DD51BD740009 /* YFNetworkingConfigurationManager.h */,
+				33AD88A31FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h */,
 				2CE9C74F3FB1E8DC5D26530634115528 /* YFNetworkingConfigurationManager.m */,
 			);
 			name = Configurations;
@@ -1308,13 +1316,13 @@
 				B01C797031FA61EC456088598427F9D1 /* YFAPIBaseManager.h in Headers */,
 				614D2938A7606D0046A3676A3AF05926 /* YFApiProxy.h in Headers */,
 				F1DBADAF49D4FA0DF98EF50618AFED1A /* YFCache.h in Headers */,
-				889D422C3D19E210BF4DC9F5FC351424 /* YFCacheObject.h in Headers */,
+				889D422C3D19E210BF4DC9F5FC351424 /* YFCachedObject.h in Headers */,
 				0C02FE965A0560F8E560F0DAAD2BCB85 /* YFCommonParamsGenerator.h in Headers */,
 				5171939278AE7F1ECE21638420C05BCE /* YFLocationManager.h in Headers */,
 				C335BE485E10029817EA4265BA035645 /* YFLogger.h in Headers */,
 				B76EB302B978E1D64D336FC610D88449 /* YFLoggerConfiguration.h in Headers */,
 				1C5776DEDEB5199734EE4A35078FFA6D /* YFNetworking-umbrella.h in Headers */,
-				7F775CE33ABB13271204A57DA2BAD74B /* YFNetworkingConfigurationManager.h in Headers */,
+				33AD88A81FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */,
 				1FCA01042F0633130F24D92591A6F606 /* YFRequestGenerator.h in Headers */,
 				39C454D201332C7178A22353E9320E5E /* YFService.h in Headers */,
 				6439E897668CB7AAA5F290CCF174EB14 /* YFServiceFactory.h in Headers */,
@@ -1340,6 +1348,7 @@
 				5D3A5E9359A70F84E5EC0C4CE701DDE5 /* SPTGlobalBeforeAfterEach.h in Headers */,
 				87C61FE4EBA517506085582BD4175CCA /* SPTSharedExampleGroups.h in Headers */,
 				827762B596901D18DAD29830875E1922 /* SPTSpec.h in Headers */,
+				33AD88A71FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */,
 				2E81617C064F3E68A7A2A9E6A370E073 /* SPTTestSuite.h in Headers */,
 				86365A8DEDA7C9315120DED5EC7F23DC /* XCTest+Private.h in Headers */,
 				03890D59600D45E6E9463700F9B11FFE /* XCTestCase+Specta.h in Headers */,
@@ -1377,6 +1386,7 @@
 				FC6474103AA989EBD5368772037BE0BB /* EXPMatchers+beSupersetOf.h in Headers */,
 				F74F0174B426B7EAB501A3788E5D381F /* EXPMatchers+beTruthy.h in Headers */,
 				DC423A980C991970F4D637AC4C47D863 /* EXPMatchers+conformTo.h in Headers */,
+				33AD88A51FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */,
 				E3355DB3F63F6FE79FD8DD6188B0B3A4 /* EXPMatchers+contain.h in Headers */,
 				87AE70A44BD8E8676B2A3EDB6E334138 /* EXPMatchers+endWith.h in Headers */,
 				425C4DFD1FAB011D70F825631144BC4C /* EXPMatchers+equal.h in Headers */,
@@ -1422,6 +1432,7 @@
 			files = (
 				47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */,
 				4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */,
+				33AD88A41FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */,
 				FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */,
 				7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */,
 				1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */,
@@ -1448,6 +1459,7 @@
 			files = (
 				DE4EF1ED618D31CA16938565A1CA0607 /* Expecta+Snapshots-umbrella.h in Headers */,
 				CDBF7F2D23165CAB8B3819A256A49F0A /* ExpectaObject+FBSnapshotTest.h in Headers */,
+				33AD88A61FFD2DA2002395B9 /* YFNetworkingConfigurationManager.h in Headers */,
 				EDF3CEAAF7922F570A5AD95B005C84F8 /* EXPMatchers+FBSnapshotTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1649,11 +1661,11 @@
 				58F7A43428876DAD12D462BAF06B5634 /* YFAPIBaseManager.m in Sources */,
 				632BFF7CD72E82618670C5F24874BB32 /* YFApiProxy.m in Sources */,
 				A57837AD862F6BBF415AC48D70088E7A /* YFCache.m in Sources */,
-				D09E8B74530C92A75E8CD415F69E9123 /* YFCacheObject.m in Sources */,
 				9C5981CC4BB6A21D0B1E2AAC087825D9 /* YFCommonParamsGenerator.m in Sources */,
 				4F2CB1E924ECE949940343B9663CAFC0 /* YFLocationManager.m in Sources */,
 				CC3395283B92C1CAA2197135BC7DC668 /* YFLogger.m in Sources */,
 				17E3C3280BF2B583809C3F9578F77C7B /* YFLoggerConfiguration.m in Sources */,
+				33AD88A21FFD27C8002395B9 /* YFCacheObject.m in Sources */,
 				69A413E4C0883675049F605F411FFC1F /* YFNetworking-dummy.m in Sources */,
 				84DEA628A70061A18651D3FFBA2F5C7A /* YFNetworkingConfigurationManager.m in Sources */,
 				DE33F3AD04952C6C5F9C4372F04D407F /* YFRequestGenerator.m in Sources */,
@@ -1688,6 +1700,7 @@
 				D490834AA1304BF36991A257F3366648 /* SpectaDSL.m in Sources */,
 				6F1C8C2851E8B7476992360408E05B40 /* SpectaUtility.m in Sources */,
 				146D2FD2E3B98DA591885219099F2A4A /* SPTCallSite.m in Sources */,
+				33AD88A11FFD27C8002395B9 /* YFCacheObject.m in Sources */,
 				255345DF9F3F6DDC70B0ABAF2775324B /* SPTCompiledExample.m in Sources */,
 				B376B4A777F62028AF0965D93658413E /* SPTExample.m in Sources */,
 				5386920B6032F8686000D909CFF26041 /* SPTExampleGroup.m in Sources */,
@@ -1720,6 +1733,7 @@
 				29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */,
 				5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */,
 				D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */,
+				33AD889E1FFD27C8002395B9 /* YFCacheObject.m in Sources */,
 				140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */,
 				F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */,
@@ -1757,6 +1771,7 @@
 				CD22121B77F0F8E2B6A58AF6226038C2 /* EXPMatchers+beIdenticalTo.m in Sources */,
 				778C9F1A1715E05313578E39AB46726E /* EXPMatchers+beInstanceOf.m in Sources */,
 				508B6D0572C0C3B4A3E019B814595D4A /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				33AD889F1FFD27C8002395B9 /* YFCacheObject.m in Sources */,
 				DF883524C3F35145D74166C01BCFCFC3 /* EXPMatchers+beKindOf.m in Sources */,
 				47D171E32EAE4FB61A9971B9BC00226D /* EXPMatchers+beLessThan.m in Sources */,
 				CE7E4C141657D23213C7FAE616D7FA75 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
@@ -1783,6 +1798,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33AD88A01FFD27C8002395B9 /* YFCacheObject.m in Sources */,
 				2CC183AE5C5A4EA8EE0E14768F464BBB /* Expecta+Snapshots-dummy.m in Sources */,
 				6C88FB17C3AE49E50ABF4C36176B55BB /* ExpectaObject+FBSnapshotTest.m in Sources */,
 				0D3FBF37E9E7829108F70F4D5658918A /* EXPMatchers+FBSnapshotTest.m in Sources */,

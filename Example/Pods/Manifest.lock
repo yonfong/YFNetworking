@@ -45,7 +45,7 @@ SPEC CHECKSUMS:
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  YFNetworking: bb21d3ab81977ae9797fd6b92e6ac53708c070a7
+  YFNetworking: 746e380a211a678eca6f64cc258b492854667f81
 
 PODFILE CHECKSUM: 958b1363aeaf432feefb4267c7deca6b916f59a1
 

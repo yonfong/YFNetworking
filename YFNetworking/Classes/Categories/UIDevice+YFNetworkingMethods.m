@@ -29,7 +29,7 @@
 // Return the local MAC addy
 // Courtesy of FreeBSD hackers email list
 // Accidentally munged during previous update. Fixed thanks to erica sadun & mlamb.
-- (NSString *) localMAC{
+- (NSString *)localMAC {
     
     int                 mib[6];
     size_t              len;
@@ -79,8 +79,7 @@
 #pragma mark -
 #pragma mark Public Methods
 
-- (NSString *)yf_createUUID
-{
+- (NSString *)yf_createUUID {
     CFUUIDRef uuid = CFUUIDCreate(NULL);
     CFStringRef string = CFUUIDCreateString(NULL, uuid);
     CFRelease(uuid);
@@ -88,8 +87,7 @@
 }
 
 
-- (NSString *)yf_macaddress
-{
+- (NSString *)yf_macaddress {
     NSString *key = @"macAddress";
     NSString *macAddress = [[NSUserDefaults standardUserDefaults] objectForKey:key];
     if (macAddress.length == 0) {
@@ -103,7 +101,7 @@
     return macAddress;
 }
 
-- (NSString *) yf_macaddressMD5{
+- (NSString *)yf_macaddressMD5 {
     NSString *key = @"MACAddressMD5";
     NSString *macid = [[NSUserDefaults standardUserDefaults] objectForKey:key];
     if (macid.length == 0) {
@@ -119,8 +117,7 @@
     return macid;
 }
 
-- (NSString *)yf_machineType
-{
+- (NSString *)yf_machineType {
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *machineType = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
@@ -161,7 +158,7 @@
     return machineType;
 }
 
-- (NSString *) yf_ostype{
+- (NSString *) yf_ostype {
     UIDevice *device = [UIDevice currentDevice];
     NSString *os = [device systemVersion];
     NSArray *array = [os componentsSeparatedByString:@"."];

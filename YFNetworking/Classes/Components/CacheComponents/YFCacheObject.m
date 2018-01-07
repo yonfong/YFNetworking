@@ -19,26 +19,22 @@
 @implementation YFCachedObject
 
 #pragma mark - getters and setters
-- (BOOL)isEmpty
-{
+- (BOOL)isEmpty {
     return self.content == nil;
 }
 
-- (BOOL)isOutdated
-{
+- (BOOL)isOutdated {
     NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:self.lastUpdateTime];
     return timeInterval > [YFNetworkingConfigurationManager sharedInstance].cacheOutdateTimeSeconds ;
 }
 
-- (void)setContent:(NSData *)content
-{
+- (void)setContent:(NSData *)content {
     _content = [content copy];
     self.lastUpdateTime = [NSDate dateWithTimeIntervalSinceNow:0];
 }
 
 #pragma mark - life cycle
-- (instancetype)initWithContent:(NSData *)content
-{
+- (instancetype)initWithContent:(NSData *)content {
     self = [super init];
     if (self) {
         self.content = content;
@@ -47,8 +43,7 @@
 }
 
 #pragma mark - public method
-- (void)updateContent:(NSData *)content
-{
+- (void)updateContent:(NSData *)content {
     self.content = content;
 }
 

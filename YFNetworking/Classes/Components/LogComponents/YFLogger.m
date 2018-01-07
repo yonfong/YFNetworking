@@ -21,8 +21,7 @@
 
 @implementation YFLogger
 
-+ (void)logDebugInfoWithRequest:(NSURLRequest *)request apiName:(NSString *)apiName service:(CTService *)service requestParams:(id)requestParams httpMethod:(NSString *)httpMethod
-{
++ (void)logDebugInfoWithRequest:(NSURLRequest *)request apiName:(NSString *)apiName service:(YFService *)service requestParams:(id)requestParams httpMethod:(NSString *)httpMethod {
 #ifdef DEBUG
     BOOL isOnline = NO;
     if ([service respondsToSelector:@selector(isOnline)]) {
@@ -51,8 +50,7 @@
 #endif
 }
 
-+ (void)logDebugInfoWithResponse:(NSHTTPURLResponse *)response responseString:(NSString *)responseString request:(NSURLRequest *)request error:(NSError *)error
-{
++ (void)logDebugInfoWithResponse:(NSHTTPURLResponse *)response responseString:(NSString *)responseString request:(NSURLRequest *)request error:(NSError *)error {
 #ifdef DEBUG
     BOOL shouldLogError = error ? YES : NO;
     
@@ -78,8 +76,7 @@
 #endif
 }
 
-+ (void)logDebugInfoWithCachedResponse:(CTURLResponse *)response methodName:(NSString *)methodName serviceIdentifier:(CTService *)service
-{
++ (void)logDebugInfoWithCachedResponse:(YFURLResponse *)response methodName:(NSString *)methodName serviceIdentifier:(YFService *)service {
 #ifdef DEBUG
     NSMutableString *logString = [NSMutableString stringWithString:@"\n\n==============================================================\n=                      Cached Response                       =\n==============================================================\n\n"];
     
@@ -97,8 +94,7 @@
 #endif
 }
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
     static YFLogger *sharedInstance;
     dispatch_once(&onceToken, ^{
@@ -107,8 +103,7 @@
     return sharedInstance;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.configParams = [[YFLoggerConfiguration alloc] init];
@@ -116,14 +111,13 @@
     return self;
 }
 
-- (void)logWithActionCode:(NSString *)actionCode params:(NSDictionary *)params
-{
+- (void)logWithActionCode:(NSString *)actionCode params:(NSDictionary *)params {
     NSMutableDictionary *actionDict = [[NSMutableDictionary alloc] init];
     actionDict[@"act"] = actionCode;
     [actionDict addEntriesFromDictionary:params];
-    [actionDict addEntriesFromDictionary:[CTCommonParamsGenerator commonParamsDictionaryForLog]];
+    [actionDict addEntriesFromDictionary:[YFCommonParamsGenerator commonParamsDictionaryForLog]];
     NSDictionary *logJsonDict = @{self.configParams.sendActionKey:[@[actionDict] yf_jsonString]};
-    [[CTApiProxy sharedInstance] callPOSTWithParams:logJsonDict serviceIdentifier:self.configParams.serviceType methodName:self.configParams.sendActionMethod success:nil fail:nil];
+    [[YFApiProxy sharedInstance] callPOSTWithParams:logJsonDict serviceIdentifier:self.configParams.serviceType methodName:self.configParams.sendActionMethod success:nil fail:nil];
 }
 
 

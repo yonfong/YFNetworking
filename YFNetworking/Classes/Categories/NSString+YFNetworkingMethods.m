@@ -11,8 +11,7 @@
 
 @implementation NSString (YFNetworkingMethods)
 
-- (NSString *)yf_md5
-{
+- (NSString *)yf_md5 {
     NSData* inputData = [self dataUsingEncoding:NSUTF8StringEncoding];
     unsigned char outputData[CC_MD5_DIGEST_LENGTH];
     CC_MD5([inputData bytes], (unsigned int)[inputData length], outputData);

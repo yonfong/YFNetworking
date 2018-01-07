@@ -25,8 +25,7 @@
 @implementation YFURLResponse
 
 #pragma mark - life cycle
-- (instancetype)initWithResponseString:(NSString *)responseString requestId:(NSNumber *)requestId request:(NSURLRequest *)request responseData:(NSData *)responseData status:(YFURLResponseStatus)status
-{
+- (instancetype)initWithResponseString:(NSString *)responseString requestId:(NSNumber *)requestId request:(NSURLRequest *)request responseData:(NSData *)responseData status:(YFURLResponseStatus)status {
     self = [super init];
     if (self) {
         self.contentString = responseString;
@@ -42,11 +41,10 @@
     return self;
 }
 
-- (instancetype)initWithResponseString:(NSString *)responseString requestId:(NSNumber *)requestId request:(NSURLRequest *)request responseData:(NSData *)responseData error:(NSError *)error
-{
+- (instancetype)initWithResponseString:(NSString *)responseString requestId:(NSNumber *)requestId request:(NSURLRequest *)request responseData:(NSData *)responseData error:(NSError *)error {
     self = [super init];
     if (self) {
-        self.contentString = [responseString CT_defaultValue:@""];
+        self.contentString = [responseString yf_defaultValue:@""];
         self.status = [self responseStatusWithError:error];
         self.requestId = [requestId integerValue];
         self.request = request;
@@ -63,8 +61,7 @@
     return self;
 }
 
-- (instancetype)initWithData:(NSData *)data
-{
+- (instancetype)initWithData:(NSData *)data {
     self = [super init];
     if (self) {
         self.contentString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -79,8 +76,7 @@
 }
 
 #pragma mark - private methods
-- (YFURLResponseStatus)responseStatusWithError:(NSError *)error
-{
+- (YFURLResponseStatus)responseStatusWithError:(NSError *)error {
     if (error) {
         YFURLResponseStatus result = YFURLResponseStatusErrorNoNetwork;
         

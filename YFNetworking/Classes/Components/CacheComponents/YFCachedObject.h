@@ -18,5 +18,4 @@
 - (instancetype)initWithContent:(NSData *)content;
 - (void)updateContent:(NSData *)content;
 
-
 @end

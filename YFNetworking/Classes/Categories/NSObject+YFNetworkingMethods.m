@@ -9,8 +9,7 @@
 
 @implementation NSObject (YFNetworkingMethods)
 
-- (id)yf_defaultValue:(id)defaultData
-{
+- (id)yf_defaultValue:(id)defaultData {
     if (![defaultData isKindOfClass:[self class]]) {
         return defaultData;
     }
@@ -22,8 +21,7 @@
     return self;
 }
 
-- (BOOL)yf_isEmptyObject
-{
+- (BOOL)yf_isEmptyObject {
     if ([self isEqual:[NSNull null]]) {
         return YES;
     }

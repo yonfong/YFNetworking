@@ -20,8 +20,7 @@
 
 @implementation YFLocationManager
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance {
     static YFLocationManager *locationManager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -30,8 +29,7 @@
     return locationManager;
 }
 
-- (void)startLocation
-{
+- (void)startLocation {
     if ([self checkLocationStatus]) {
         self.locationResult = YFLocationManagerLocationResultLocating;
         [self.locationManager startUpdatingLocation];
@@ -40,29 +38,25 @@
     }
 }
 
-- (void)stopLocation
-{
+- (void)stopLocation {
     if ([self checkLocationStatus]) {
         [self.locationManager stopUpdatingLocation];
     }
 }
 
-- (void)restartLocation
-{
+- (void)restartLocation {
     [self stopLocation];
     [self startLocation];
 }
 
 #pragma mark - CLLocationManagerDelegate
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     self.currentLocation = [manager.location copy];
     NSLog(@"Current location is %@", self.currentLocation);
     [self stopLocation];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
-{
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     //如果用户还没选择是否允许定位，则不认为是定位失败
     if (self.locationStatus == YFLocationManagerLocationServiceStatusNotDetermined) {
         return;
@@ -74,8 +68,7 @@
     }
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
-{
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
         self.locationStatus = YFLocationManagerLocationServiceStatusOK;
         [self restartLocation];
@@ -90,28 +83,26 @@
 }
 
 #pragma mark - private methods
-- (void)failedLocationWithResultType:(YFLocationManagerLocationResult)result statusType:(YFLocationManagerLocationServiceStatus)status
-{
+- (void)failedLocationWithResultType:(YFLocationManagerLocationResult)result statusType:(YFLocationManagerLocationServiceStatus)status {
     self.locationResult = result;
     self.locationStatus = status;
 }
 
-- (BOOL)checkLocationStatus;
-{
+- (BOOL)checkLocationStatus; {
     BOOL result = NO;
     BOOL serviceEnable = [self locationServiceEnabled];
     YFLocationManagerLocationServiceStatus authorizationStatus = [self locationServiceStatus];
     if (authorizationStatus == YFLocationManagerLocationServiceStatusOK && serviceEnable) {
         result = YES;
-    }else if (authorizationStatus == YFLocationManagerLocationServiceStatusNotDetermined) {
+    } else if (authorizationStatus == YFLocationManagerLocationServiceStatusNotDetermined) {
         result = YES;
-    }else{
+    } else {
         result = NO;
     }
     
     if (serviceEnable && result) {
         result = YES;
-    }else{
+    } else {
         result = NO;
     }
     
@@ -122,8 +113,7 @@
     return result;
 }
 
-- (BOOL)locationServiceEnabled
-{
+- (BOOL)locationServiceEnabled {
     if ([CLLocationManager locationServicesEnabled]) {
         self.locationStatus = YFLocationManagerLocationServiceStatusOK;
         return YES;
@@ -133,8 +123,7 @@
     }
 }
 
-- (YFLocationManagerLocationServiceStatus)locationServiceStatus
-{
+- (YFLocationManagerLocationServiceStatus)locationServiceStatus {
     self.locationStatus = YFLocationManagerLocationServiceStatusUnknownError;
     BOOL serviceEnable = [CLLocationManager locationServicesEnabled];
     if (serviceEnable) {
@@ -163,8 +152,7 @@
 }
 
 #pragma mark - getters and setters
-- (CLLocationManager *)locationManager
-{
+- (CLLocationManager *)locationManager {
     if (_locationManager == nil) {
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;

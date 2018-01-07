@@ -12,13 +12,11 @@ static void *YFNetworkingRequestParams;
 
 @implementation NSURLRequest (YFNetworkingMethods)
 
-- (void)setRequestParams:(NSDictionary *)requestParams
-{
+- (void)setRequestParams:(NSDictionary *)requestParams {
     objc_setAssociatedObject(self, &YFNetworkingRequestParams, requestParams, OBJC_ASSOCIATION_COPY);
 }
 
-- (NSDictionary *)requestParams
-{
+- (NSDictionary *)requestParams {
     return objc_getAssociatedObject(self, &YFNetworkingRequestParams);
 }
 

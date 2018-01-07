@@ -1,12 +1,12 @@
 //
-//  YFNetworkingConfiguration.m
+//  YFNetworkingConfigurationManager.m
 //  Pods
 //
-//  Created by sky on 2018/1/2.
+//  Created by sky on 2018/1/7.
 //
 
-#import <AFNetworking/AFNetworking.h>
 #import "YFNetworkingConfigurationManager.h"
+#import <AFNetworking/AFNetworking.h>
 
 @implementation YFNetworkingConfigurationManager
 
@@ -33,6 +33,5 @@
         return [[AFNetworkReachabilityManager sharedManager] isReachable];
     }
 }
-
 
 @end

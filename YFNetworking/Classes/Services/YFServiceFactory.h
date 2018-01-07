@@ -25,6 +25,5 @@
 + (instancetype)sharedInstance;
 - (YFService<YFServiceProtocol> *)serviceWithIdentifier:(NSString *)identifier;
 
-
 @end
 

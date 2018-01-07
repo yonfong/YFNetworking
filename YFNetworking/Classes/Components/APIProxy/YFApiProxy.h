@@ -10,7 +10,7 @@
 
 typedef void(^YFCallback)(YFURLResponse *response);
 
-@interface YFApiProxy
+@interface YFApiProxy: NSObject
 
 + (instancetype)sharedInstance;
 

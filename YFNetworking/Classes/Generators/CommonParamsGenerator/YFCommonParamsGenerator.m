@@ -10,14 +10,12 @@
 
 @implementation YFCommonParamsGenerator
 
-+ (NSDictionary *)commonParamsDictionary
-{
++ (NSDictionary *)commonParamsDictionary {
     return @{
              };
 }
 
-+ (NSDictionary *)commonParamsDictionaryForLog
-{
++ (NSDictionary *)commonParamsDictionaryForLog {
     return @{
              };
 }

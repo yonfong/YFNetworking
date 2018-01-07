@@ -547,6 +547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YFNetworking/YFNetworking-Prefix.pch";
 				INFOPLIST_FILE = "YFNetworking/YFNetworking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -570,6 +571,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YFNetworking/YFNetworking-Prefix.pch";
 				INFOPLIST_FILE = "YFNetworking/YFNetworking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
